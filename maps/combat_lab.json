@@ -1,0 +1,12 @@
+{
+  "name": "전투 실험실 · 기준안 A", "hazardEnabled": false,
+  "left": -9, "right": 9, "bottom": -2,
+  "spawns": [{"x": -0.1, "y": 8, "facing": 1}, {"x": 1.0, "y": 8, "facing": -1}],
+  "platforms": [
+    {"id":"T0", "x":0, "y":8, "width":3},
+    {"id":"T1", "x":-2, "y":6.5, "width":2.5},
+    {"id":"T2", "x":2, "y":6.5, "width":2.5},
+    {"id":"T3", "x":0, "y":5, "width":4},
+    {"id":"T4", "x":0, "y":2, "width":8}
+  ]
+}
