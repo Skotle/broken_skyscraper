@@ -1,0 +1,12 @@
+{
+  "width": 0.8, "height": 1.6,
+  "runSpeed": 6.0, "groundAcceleration": 60.0,
+  "groundDeceleration": 75.0, "airAcceleration": 24.0,
+  "gravity": 30.0, "jumpVelocity": 11.0, "terminalFallSpeed": 18.0,
+  "coyoteTicks": 6, "jumpBufferTicks": 6, "dropVelocity": -1.0,
+  "attackStartup": 8, "attackActive": 3, "attackRecovery": 19,
+  "attackTotal": 30, "attackWidth": 1.0, "attackHeight": 1.2,
+  "attackOffsetX": 0.75, "attackOffsetY": 0.8,
+  "knockbackX": 9.0, "knockbackY": 4.5, "hitstunTicks": 14,
+  "dodgeTicks": 15, "dodgeInvulnerableTicks": 9, "dodgeCooldown": 60
+}

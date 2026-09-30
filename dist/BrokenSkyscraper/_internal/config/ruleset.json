@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1, "buildId": "combat-prototype-0.1.0",
+  "tickRate": 60, "matchTicks": 7200, "countdownTicks": 180,
+  "healthUnits": 1000, "hazardDamageUnits": 2,
+  "heightTieTolerance": 0.1, "collisionEpsilon": 0.00001,
+  "hazardKeyframes": [[0,34],[300,34],[2700,22],[5100,10],[7200,1]]
+}

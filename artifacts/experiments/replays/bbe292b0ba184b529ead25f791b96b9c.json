@@ -1,0 +1,2407 @@
+{
+  "schemaVersion": 1,
+  "buildId": "combat-prototype-0.1.0",
+  "matchId": "bbe292b0ba184b529ead25f791b96b9c",
+  "rulesetHash": "6ff743cbe13d364303f6eb33bcbac5f29fb32c289bf8c5e0f698818a7b2e6b8f",
+  "mapHash": "baf3ec05eae9d681bcd888f7ce4cddf4c91513ee2dd54b0182ad1afdab904130",
+  "rules": {
+    "schemaVersion": 1,
+    "buildId": "combat-prototype-0.1.0",
+    "tickRate": 60,
+    "matchTicks": 7200,
+    "countdownTicks": 180,
+    "healthUnits": 1000,
+    "hazardDamageUnits": 2,
+    "heightTieTolerance": 0.1,
+    "collisionEpsilon": 1e-05,
+    "hazardKeyframes": [
+      [
+        0,
+        34
+      ],
+      [
+        300,
+        34
+      ],
+      [
+        2700,
+        22
+      ],
+      [
+        5100,
+        10
+      ],
+      [
+        7200,
+        1
+      ]
+    ]
+  },
+  "config": {
+    "width": 0.8,
+    "height": 1.6,
+    "runSpeed": 6.0,
+    "groundAcceleration": 60.0,
+    "groundDeceleration": 75.0,
+    "airAcceleration": 24.0,
+    "gravity": 30.0,
+    "jumpVelocity": 11.0,
+    "terminalFallSpeed": 18.0,
+    "coyoteTicks": 6,
+    "jumpBufferTicks": 6,
+    "dropVelocity": -1.0,
+    "attackStartup": 8,
+    "attackActive": 3,
+    "attackRecovery": 19,
+    "attackTotal": 30,
+    "attackWidth": 1.0,
+    "attackHeight": 1.2,
+    "attackOffsetX": 0.75,
+    "attackOffsetY": 0.8,
+    "knockbackX": 9.0,
+    "knockbackY": 4.5,
+    "hitstunTicks": 14,
+    "dodgeTicks": 15,
+    "dodgeInvulnerableTicks": 9,
+    "dodgeCooldown": 60
+  },
+  "world": {
+    "name": "전투 실험실 · 기준안 A",
+    "hazardEnabled": false,
+    "left": -9,
+    "right": 9,
+    "bottom": -2,
+    "spawns": [
+      {
+        "x": -0.1,
+        "y": 8,
+        "facing": 1
+      },
+      {
+        "x": 1.0,
+        "y": 8,
+        "facing": -1
+      }
+    ],
+    "platforms": [
+      {
+        "id": "T0",
+        "x": 0,
+        "y": 8,
+        "width": 3
+      },
+      {
+        "id": "T1",
+        "x": -2,
+        "y": 6.5,
+        "width": 2.5
+      },
+      {
+        "id": "T2",
+        "x": 2,
+        "y": 6.5,
+        "width": 2.5
+      },
+      {
+        "id": "T3",
+        "x": 0,
+        "y": 5,
+        "width": 4
+      },
+      {
+        "id": "T4",
+        "x": 0,
+        "y": 2,
+        "width": 8
+      }
+    ]
+  },
+  "metadata": {
+    "experiment": "scripted-pressure-probe",
+    "humanValidated": false,
+    "mirror": false,
+    "moving": false,
+    "swapped": true,
+    "attackDelay": 0
+  },
+  "initial": {
+    "tick": 0,
+    "remaining": 7200,
+    "countdown": 0,
+    "phase": "Playing",
+    "hazardY": 34.0,
+    "players": [
+      {
+        "id": 1,
+        "x": 1.0,
+        "y": 8,
+        "facing": -1,
+        "vx": 0.0,
+        "vy": 0.0,
+        "support": "T0",
+        "ignored": null,
+        "action": "Neutral",
+        "age": 0,
+        "dodge_ready": 0,
+        "hitstun_until": 0,
+        "coyote_expires": 0,
+        "buffer_expires": 0,
+        "health": 1000,
+        "attack_sequence": 0,
+        "attack_facing": -1,
+        "hit_targets": [],
+        "eliminated": false,
+        "reasons": []
+      },
+      {
+        "id": 2,
+        "x": -0.1,
+        "y": 8,
+        "facing": 1,
+        "vx": 0.0,
+        "vy": 0.0,
+        "support": "T0",
+        "ignored": null,
+        "action": "Neutral",
+        "age": 0,
+        "dodge_ready": 0,
+        "hitstun_until": 0,
+        "coyote_expires": 0,
+        "buffer_expires": 0,
+        "health": 1000,
+        "attack_sequence": 0,
+        "attack_facing": 1,
+        "hit_targets": [],
+        "eliminated": false,
+        "reasons": []
+      }
+    ],
+    "result": null
+  },
+  "frames": [
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": true,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": -1,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ],
+    [
+      {
+        "move": 0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      },
+      {
+        "move": 0.0,
+        "jump": false,
+        "drop": false,
+        "attack": false,
+        "dodge": false
+      }
+    ]
+  ],
+  "events": [
+    {
+      "type": "hit",
+      "tick": 8,
+      "attacker": 2,
+      "target": 1,
+      "attackId": "2:1",
+      "position": [
+        0.35,
+        8
+      ],
+      "eventId": "bbe292b0ba184b529ead25f791b96b9c:8:0"
+    }
+  ],
+  "stateHashes": [
+    "4587a5c782425355f5f946e81343d4c2b3c96a0dc33d47677026dbd1aecac85d",
+    "c176ee83aa5f22779016512fb1fb4ac663a28e5a615a46688115b807cfb2b50d",
+    "4ff32f6b9cd76970ae3ce851d4e78c5d361c03598602686893c4432db5ed9e31",
+    "4ae475996054bd85724afecb43aad149ec157df3450e3c630aa0255b865baf2d",
+    "00e99781b2009803b847ae112f8b6a603bf105672974ea627f333c81db9df9d6",
+    "6b37e53afd94dfcf25a76b5e2a4948864cf93589d6727cc4786c183df8badc5c",
+    "7a5df7df44f74fbb42b8f1dd38d3459b77b8bfb108bde690889f58d22d101d9b",
+    "e9ea0be64eef71e8b08260aedc578695baaaf195126b4d5f689dfd4be264f722",
+    "33ed1f8b8569b8857f57db8bb1e715b50f28e2fd9f879c7e10153b3b58999305",
+    "e98bd1647743f8bee76a3487581193f2fbfa3e7e007de8a0b2739151b9583732",
+    "b21e98762b034b28667fb9e3b69d071310b0113f55ee522f5ed9eb9b7321dde5",
+    "305046d8d02d513c147a711870518b76d2c57d513dfda362cc9cbbb2d9c916d0",
+    "fd3853a390aed1fdc717373941c9e8191760ee73f788a6c1db35b6ddefaad592",
+    "309c29919f5a88c86984d60b4442388fbc76572806c3d25a80e0c62b78b8ae78",
+    "f2639c39b3e15c6e2eb01417d28504bfb912e5ec70ce7b04f481613d932c56ae",
+    "e07bf352e19d266ce0cdd5e9a56ff9c7e213feaec9b81770cbd9a2b2e76c0deb",
+    "eb4a189f84fa109120c608b9397f0aa21e01453cf2047a8e210d57ff8b072dbc",
+    "1348cd072fbdbfa5173c75a7cb21b68c5aa8334c645d56f902fe84717c20f427",
+    "79e894c227c258630396cf04fb5aa450db6e28e170a659ca4c37edf6e5c958a0",
+    "8a81000e5f2ea6e9ebc44b39a4fe53b52249b16912206dc548ca6dae10b9ed90",
+    "2a6824613d2fc85ed3c89b9278dcfd1469d5d646c3c165878843ed23940fe2dc",
+    "d382f28117ef78a0c23a77090483930935faecc613c021e19d628537ba3e66a7",
+    "373c9ab4f3d41e757f994fa4bc70a8826edba3af0dbca79f82b0c31d1bd38706",
+    "ddae7eee4e8fbe588fb49daf9755a0409dd22a019e1648cd84453cad3ff9c918",
+    "84ad54582a8a6011fb1f829c5d29f8fde54eb147d4820ab1b889cbab76a608ed",
+    "c6f0758a16a82480462207b97471b8cc05dbaddfea065834efe043c6b246c25a",
+    "123ccd19c66acb38584341c85b25ae9e165ada29f6686dcd9bcf72441ec3979d",
+    "1a65bbd72096ac35cafb257f7363add678a803becb21ffaa1c07ec08044901cb",
+    "5d424026737501e523f6118fd8592317d22d5f4a64ebdea0ae6f7ce6ed637dbe",
+    "98944aff522b6885f15e73adfefff254b5bcd3de0769c364da8bd2589f330a0f",
+    "2f126fa86ffba6d7eb99da5aa590e13b4d86bcb73fe090cdb527287910e6597f",
+    "c803ced37e46eff97d4392d9875bc355c73e3e7b2ab2fcfccefa734f61985ad4",
+    "3c5b5c29410e997acf29adf9831eea1310977610f2d24085ea4c55df4a7a642b",
+    "750f948ebb577e688c43f7a066ebc231522da0f980f69b3f54fd2c11bb4880c1",
+    "9593594afd70ebddf6d3ae944852cb9131ec7d05bfb18a0a2a3aba6747bad0f0",
+    "ce7d4bbe240da5338ce0cc78549195349066d46744e9d0504152311fdd84998f",
+    "eb5f620dbfb8b6dc07f5ec1a6128ae40d121648fd1cb475e6bcb901ccf3801f0",
+    "37eb7632029f50250b54a36ae2a2af2a23d807309575d9b3d7d2b74bc0f4a65a",
+    "88201b1ae5804397674d9c8480f55f20ddbee1f2780591ea89a1f9894f86f4f7",
+    "9b603a13578baf5b7a30ebb29756a3b152001a73a408d9151089fe35a3bc7ecc",
+    "bbb84cecbe88164ddc4a3031ff0677bbb290d99105362ea4154407a45bf28886",
+    "43d47897528ef5241a4e94208e27781b1bfed500fb401a04327c54d91c492798",
+    "4dcd9c55dd0d6dc05bfaaadff3643b03fab69f888dd074534a703dd5b6c34dbf",
+    "9ea36b317461b355c61e46c3472b3d0783768d8179a6ac7170ca9a0993d9c85f",
+    "020d71dc2c8e6358009a174fceb52902de26e8e312a0e69ac0407e7ca7098421",
+    "1795a9ef4ce7689b5c8dccc7d59f380e7d7c8f08b38736781658ec312f877a52",
+    "f7c057b5446e6311351d4439d5e9292a77165b0d297f766aa15756005c1b33ea",
+    "ef4205c403c9e18522c01975623481aff701acfab9610c9eaeded3808499459f",
+    "c82fe6bcdb152f34d714f33fbffdbf6bdcb8f1dedab650ff9c1100eb13c72692",
+    "9c912ebd0febc4f89e80234cc6dbb1a8ebac785a39bc9e7229cab605d9bcb5a6",
+    "805fe34f82eb5ca28b21cc338084c23a7c8f525df239e704de8de0333f8458cd",
+    "19eaaaba3f76fc34a63504259d9838852b8006473ae9e94035a7ffd224db5a2e",
+    "0f6e0b859af8ab435216e8b01d8608efe79b04f487289904cd6ec6ac61ac90df",
+    "4b04869a6e86e18e3bfb3ee60c93c34aa5e7cbd132b2b256b7f5648e3b09bc8c",
+    "8a7dca53f43422a3540c7330d3141cef87cd5370e044177ff0a7ec5a43fa55a2",
+    "ac65c4b3b292ea73c6a8f5398259239e7e28c053e2796bcaa24714af1609ab1c",
+    "154cb8c4d345b9bf5772d9061752241ee144e5872f700bae561cd891f9d7eaed",
+    "0d21dd80d83daa0f9f753fb65b4c66ca4d080c8f8e3b9a0e2a8c41d0b94df24c",
+    "8f8d334054b2125a2cf428daea9f4c972beb26c589fea3d5bb9fe8dd8d13b67a",
+    "b85519e6261f8097e52a237bbdde7e0a6c986490373e21961656de02d5a4cdbc",
+    "99849dac0898d0cb329cb98795fb52a53c335ac0a53dd8996ce1e627ffe2cfd8",
+    "2569320bb20c74ed0fb62abe869134cb052866edea825e50f04deb7305e7d3ac",
+    "2fad5630caa27cf6bbcebe3d8bc3ffcbe1b1530a24d015a56193d655673d4b8e",
+    "62ba5ec4810f55e1bd7538c889de493c491c6cee97d083c85fad191fed52eafa",
+    "922cd8d8be0e3d90242b0df185b529fca71f851ce5143a1a65d7a41a93c5fa2e",
+    "509e2a89c2a92e377d2a89eb90a3b975f2fa32f9eaa3e92ee4bcc5346a8284bf",
+    "2181bcf195d4b94a5bc1adec0ec60ac74ee892aaf5d890d507de7f5d6b107407",
+    "5c20d79cde189d1eace10c4efdde52e9f5229331969322bb31355592a1f18dee",
+    "04c3e2bd04b04b478064a3ee42618fbc506dc908cbc0bfe0d21780c6b146ed4a",
+    "aaa80f2ff9934bc020902e0da93579d32bbb995f7b4e38b6599e84b8bbcaa69e",
+    "5b52658c866ebb034cf1c90de2238d818fe843e21a22f5c4b92c4e6d271ccad9",
+    "9f6190dc27e4c1e1527c51939a0cb6427add12cb2dccde1c4294ad5f27467fec",
+    "eb7149776c5cdd342b38ad1f58d54b500668a661eb08244ca159d3c3f8d865ca",
+    "cf118724a067d87f674f7f6aaa4af90801eedbdd7dc254708264cff072b51d16",
+    "b9bf950720b090cf9f20d26e81a43bc4c919fc144de4aa356381435ff0872bf8",
+    "f7cb1b6000f77dece1b30252e7210652b150829647e2f1f9d9a67395252486c4",
+    "1bee4db78d092a04c08e3ce766d33145d1c16cf4bd9ece0b9878a663eb7f1a9a",
+    "2f06f87a851c276d2af34f463c526b2eb9e39ee23e1f9fad7cf54a6eb2e95c4e",
+    "ee9553266310a660cc8c4f15d58b2dd2fa5aa19d2147bb4d0d48be96f33f8a5e",
+    "0b012745e1e6d84a2e86fa17648da6e00917be98e2c8db495b332ae084247e32",
+    "f128375f5b7bdf17b8204a2e0ae6b2b2028ec325ea2c996d166ab9d7a4bd6a96",
+    "141504f36baaa6b90b063abe9710558879f1dc49f7c4c42312e9a3797c55583e",
+    "5ebfeb958879a5d1b9c2283c7b6917d4845be42879bbb9199f8e7d2208507396",
+    "98f53cd4dd0465a41a7fd4f1ba5cc6c82b6c70e051ce4af7b75fc294d5b5cae4",
+    "fb8d5b58016a809935aeaa56449538ff94db0a915189296ff5fc1a25c3574576",
+    "c7884f24b5a41d944011bba1ed744af2963187738c28037e869fe8342be5fd23",
+    "48199050ef3f7886d7cb468d92e17e977729e89c6e4232900532112a1b51edfe",
+    "b54df96d78c6ceaed0dfc5bb7342735910f1172c5038dd70c34cd239be814291",
+    "40172bbc30160b089edce86830281b0a40b8a118a99d3474f667ebe5d83cd150",
+    "bc8d6e022be3df897e1cf4ff670786d9c13a4f69e35a3dd54cb9546c1e3c3297",
+    "d7ab4825414fd0dfbe865c5d6111048e35d202f65f231112986ad9806936626a",
+    "d889e1b2a18867f1ac43f057c77f637712df3766d39cde74e5f0978a6e7ab33d",
+    "3328af616ee4e6ba51b9cd3b468630787cafdd11e91a64510b2e3337b07e68eb",
+    "d31051eae022435271c71d4e5a3b9e7562aa37d314e60b1dcd57010858edc4be",
+    "793b0ca848981ffdd809720f6cd7ca9173a0ff3ad28c331f65b5aa82deda2d11",
+    "104fc0c6f17427207f0eba4cb4838f5aec9066b6e13dc93a1f606a80ef07e364",
+    "3333851475f275e00eeb9b98918937e11fa0ffd96befb2e798bbedff5f2aaa6c",
+    "043163fed57d027147bbf7b5638d4744f1b9f82c79533d2603336ed0125611e4",
+    "d43cba5fd1aef7bc772491670710855227791a7ce15318d0513fd86788627904",
+    "aaf96bf75fe98666259f74fe97183abb7f68644ce0bc6cb43a28b356a64756f4",
+    "88504b1ee1d98661ebe9cf6f55e9288981f68cab9395d6b7ab32a7ead7386b9e",
+    "3706bfd44f23dc7ade08445a38d67aed3798992c822c4ea8d511f367b050b531",
+    "6cf9adc87683d6331d35d9ae8bfd1015c5936c79a3caa1aed896fdfd845b9bd5",
+    "e5ea3496df9ad2e0ecc30a69ce61272ff24c8217d2fabe2be098385d51be79e3",
+    "e33f26d27ce20a9a4e5953205eafdb6f9badfdc458951bc859eaeeccf9a9c827",
+    "edafef03dbc209ed80de3bfe775df70de26e5f505849cc21829803f8a6bb47e3",
+    "8a07b216c0948586daf65144508f50af586e9a9f02e7d1741faf6363d23a9612",
+    "7f5dd5dc09fa0f80fa52f2babc8bd7948113acdb86a8f18fbb0106d66c8eaeb9",
+    "999d314b3560753710b1db3ba151922b91b6e555ca9f857190b1e602a27e0f7b",
+    "6d892754b3ee9b3b70a2c17029ccb01aa7378e7fd9dd190700fc3ace4f4fd5e8",
+    "a411a94aa61acb1035974fe5fd388b0b22a6cc5e6df4aa7a7e8c20e9d107558e",
+    "be1e153c6157d36795674a4d8d659df1f4ca2ce5d482adbbd6b5772d4382b303",
+    "248e3cf7d4f0b8bddb92eb9d93be97d1e7ca5adc1293c872420a4ef427a4b508",
+    "620815cc6062ee50c09c331cdb0086c8c6f645f1b7578edd59ac45d37d57ba33",
+    "4cf39acd996befb859c1c92d55a74f77e4b9df2cfc18e25a18994d7303fedfa4",
+    "df42ba00509d97812c607e83eac9bad327ae3d385e6e023270ce97937f0cc6bd",
+    "1620111f36b3bb76e94cc646dc21cadc65bf2ec7dcde35a06911f565c4cb5b34",
+    "fec9982a1a8d8556083913cecfe89f0c80168711a54a6d54c50902072a6306db",
+    "a6568cfbdab73a8e3ea3cef83bf1018c202d946b6065f54c0bb67d80c15c3d9d",
+    "43da6485cc06889d518aa6e946717406c850eb6bfdde791e62d5c34104d3941f"
+  ],
+  "checkpoints": {
+    "0": {
+      "tick": 1,
+      "remaining": 7199,
+      "countdown": 0,
+      "phase": "Playing",
+      "hazardY": 34.0,
+      "players": [
+        {
+          "id": 1,
+          "x": 0.9833333333333333,
+          "y": 8,
+          "facing": -1,
+          "vx": -1.0,
+          "vy": 0.0,
+          "support": "T0",
+          "ignored": null,
+          "action": "Neutral",
+          "age": 0,
+          "dodge_ready": 0,
+          "hitstun_until": 0,
+          "coyote_expires": 0,
+          "buffer_expires": 0,
+          "health": 1000,
+          "attack_sequence": 0,
+          "attack_facing": -1,
+          "hit_targets": [],
+          "eliminated": false,
+          "reasons": []
+        },
+        {
+          "id": 2,
+          "x": -0.1,
+          "y": 8,
+          "facing": 1,
+          "vx": 0.0,
+          "vy": 0.0,
+          "support": "T0",
+          "ignored": null,
+          "action": "AttackStartup",
+          "age": 1,
+          "dodge_ready": 0,
+          "hitstun_until": 0,
+          "coyote_expires": 0,
+          "buffer_expires": 0,
+          "health": 1000,
+          "attack_sequence": 1,
+          "attack_facing": 1,
+          "hit_targets": [],
+          "eliminated": false,
+          "reasons": []
+        }
+      ],
+      "result": null
+    },
+    "60": {
+      "tick": 61,
+      "remaining": 7139,
+      "countdown": 0,
+      "phase": "Playing",
+      "hazardY": 34.0,
+      "players": [
+        {
+          "id": 1,
+          "x": 3.189999999999999,
+          "y": 2,
+          "facing": -1,
+          "vx": -6.0,
+          "vy": 0,
+          "support": "T4",
+          "ignored": null,
+          "action": "Neutral",
+          "age": 0,
+          "dodge_ready": 0,
+          "hitstun_until": 23,
+          "coyote_expires": 0,
+          "buffer_expires": 0,
+          "health": 1000,
+          "attack_sequence": 0,
+          "attack_facing": -1,
+          "hit_targets": [],
+          "eliminated": false,
+          "reasons": []
+        },
+        {
+          "id": 2,
+          "x": -0.1,
+          "y": 8,
+          "facing": 1,
+          "vx": 0.0,
+          "vy": 0.0,
+          "support": "T0",
+          "ignored": null,
+          "action": "Neutral",
+          "age": 0,
+          "dodge_ready": 0,
+          "hitstun_until": 0,
+          "coyote_expires": 0,
+          "buffer_expires": 0,
+          "health": 1000,
+          "attack_sequence": 1,
+          "attack_facing": 1,
+          "hit_targets": [
+            1
+          ],
+          "eliminated": false,
+          "reasons": []
+        }
+      ],
+      "result": null
+    }
+  },
+  "final": {
+    "tick": 120,
+    "remaining": 7080,
+    "countdown": 0,
+    "phase": "Playing",
+    "hazardY": 34.0,
+    "players": [
+      {
+        "id": 1,
+        "x": 0.09833333333333069,
+        "y": 2,
+        "facing": -1,
+        "vx": 0.0,
+        "vy": 0,
+        "support": "T4",
+        "ignored": null,
+        "action": "Neutral",
+        "age": 0,
+        "dodge_ready": 0,
+        "hitstun_until": 23,
+        "coyote_expires": 0,
+        "buffer_expires": 0,
+        "health": 1000,
+        "attack_sequence": 0,
+        "attack_facing": -1,
+        "hit_targets": [],
+        "eliminated": false,
+        "reasons": []
+      },
+      {
+        "id": 2,
+        "x": -0.1,
+        "y": 8,
+        "facing": 1,
+        "vx": 0.0,
+        "vy": 0.0,
+        "support": "T0",
+        "ignored": null,
+        "action": "Neutral",
+        "age": 0,
+        "dodge_ready": 0,
+        "hitstun_until": 0,
+        "coyote_expires": 0,
+        "buffer_expires": 0,
+        "health": 1000,
+        "attack_sequence": 1,
+        "attack_facing": 1,
+        "hit_targets": [
+          1
+        ],
+        "eliminated": false,
+        "reasons": []
+      }
+    ],
+    "result": null
+  }
+}

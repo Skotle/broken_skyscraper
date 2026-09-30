@@ -1,0 +1,56 @@
+{
+  "frames": 240,
+  "tick": 60,
+  "phase": "Playing",
+  "players": [
+    {
+      "id": 1,
+      "x": -0.1,
+      "y": 8,
+      "facing": 1,
+      "vx": 0.0,
+      "vy": 0.0,
+      "support": "T0",
+      "ignored": null,
+      "action": "Neutral",
+      "age": 0,
+      "dodge_ready": 0,
+      "hitstun_until": 0,
+      "coyote_expires": 0,
+      "buffer_expires": 0,
+      "health": 1000,
+      "attack_sequence": 0,
+      "attack_facing": 1,
+      "hit_targets": [],
+      "eliminated": false,
+      "reasons": []
+    },
+    {
+      "id": 2,
+      "x": 1.0,
+      "y": 8,
+      "facing": -1,
+      "vx": 0.0,
+      "vy": 0.0,
+      "support": "T0",
+      "ignored": null,
+      "action": "Neutral",
+      "age": 0,
+      "dodge_ready": 0,
+      "hitstun_until": 0,
+      "coyote_expires": 0,
+      "buffer_expires": 0,
+      "health": 1000,
+      "attack_sequence": 0,
+      "attack_facing": -1,
+      "hit_targets": [],
+      "eliminated": false,
+      "reasons": []
+    }
+  ],
+  "replay": {
+    "ok": true,
+    "steps": 240,
+    "tick": 60
+  }
+}
