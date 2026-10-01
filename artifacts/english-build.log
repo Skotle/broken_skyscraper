@@ -1,0 +1,131 @@
+test_input_through_application_and_rematch (test_app.AppIntegrationTests.test_input_through_application_and_rematch) ... ok
+test_controller_axes_buttons_and_stable_slots_on_disconnect (test_input.InputTests.test_controller_axes_buttons_and_stable_slots_on_disconnect) ... ok
+test_down_jump_normalizes_to_drop_only (test_input.InputTests.test_down_jump_normalizes_to_drop_only) ... ok
+test_first_controller_disconnect_does_not_reassign_second (test_input.InputTests.test_first_controller_disconnect_does_not_reassign_second) ... ok
+test_focus_loss_clears_held_inputs (test_input.InputTests.test_focus_loss_clears_held_inputs) ... ok
+test_keyboard_bindings_round_trip_and_corruption_recovery (test_input.InputTests.test_keyboard_bindings_round_trip_and_corruption_recovery) ... ok
+test_two_keyboard_slots_and_single_press_edges (test_input.InputTests.test_two_keyboard_slots_and_single_press_edges) ... ok
+test_30_60_144_render_frames_do_not_change_simulation (test_replay.ReplayTests.test_30_60_144_render_frames_do_not_change_simulation) ... ok
+test_logs_are_bounded_without_touching_other_files (test_replay.ReplayTests.test_logs_are_bounded_without_touching_other_files) ... ok
+test_record_save_replay_and_corruption (test_replay.ReplayTests.test_record_save_replay_and_corruption) ... ok
+test_reports_first_divergent_tick_between_checkpoints (test_replay.ReplayTests.test_reports_first_divergent_tick_between_checkpoints) ... ok
+test_C01_crossing_overlap_not_final_overlap (test_simulation.CollisionTests.test_C01_crossing_overlap_not_final_overlap) ... ok
+test_C02_final_overlap_does_not_create_landing (test_simulation.CollisionTests.test_C02_final_overlap_does_not_create_landing) ... ok
+test_C03_exact_corner_is_not_support (test_simulation.CollisionTests.test_C03_exact_corner_is_not_support) ... ok
+test_C04_earliest_platform_and_id_tie (test_simulation.CollisionTests.test_C04_earliest_platform_and_id_tie) ... ok
+test_C05_residual_motion_leaves_platform (test_simulation.CollisionTests.test_C05_residual_motion_leaves_platform) ... ok
+test_wall_before_landing_splits_path (test_simulation.CollisionTests.test_wall_before_landing_splits_path) ... ok
+test_rejects_invalid_data (test_simulation.ConfigTests.test_rejects_invalid_data) ... ok
+test_R01_one_hit_per_attack (test_simulation.RulesTests.test_R01_one_hit_per_attack) ... ok
+test_R02_trade_is_independent_of_slot_order (test_simulation.RulesTests.test_R02_trade_is_independent_of_slot_order) ... ok
+test_R03_R04_invulnerability_boundary (test_simulation.RulesTests.test_R03_R04_invulnerability_boundary) ... ok
+test_R05_dodge_does_not_block_hazard (test_simulation.RulesTests.test_R05_dodge_does_not_block_hazard) ... ok
+test_R06_simultaneous_fall (test_simulation.RulesTests.test_R06_simultaneous_fall) ... ok
+test_R07_mixed_eliminations_same_tick (test_simulation.RulesTests.test_R07_mixed_eliminations_same_tick) ... ok
+test_R08_elimination_beats_timeout (test_simulation.RulesTests.test_R08_elimination_beats_timeout) ... ok
+test_R09_R10_height_tolerance (test_simulation.RulesTests.test_R09_R10_height_tolerance) ... ok
+test_R11_equal_hazard_height_is_safe (test_simulation.RulesTests.test_R11_equal_hazard_height_is_safe) ... ok
+test_R12_exposure_accumulates_without_reset (test_simulation.RulesTests.test_R12_exposure_accumulates_without_reset) ... ok
+test_R13_result_is_terminal (test_simulation.RulesTests.test_R13_result_is_terminal) ... ok
+test_R14_fresh_match_resets_all_state (test_simulation.RulesTests.test_R14_fresh_match_resets_all_state) ... ok
+test_R15_dodge_cooldown (test_simulation.RulesTests.test_R15_dodge_cooldown) ... ok
+test_R16_exact_14_tick_knockback (test_simulation.RulesTests.test_R16_exact_14_tick_knockback) ... ok
+test_R17_landing_does_not_cancel_stun (test_simulation.RulesTests.test_R17_landing_does_not_cancel_stun) ... ok
+test_R18_wall_cancels_outward_velocity_only (test_simulation.RulesTests.test_R18_wall_cancels_outward_velocity_only) ... ok
+test_R19_recovery_uses_starting_support (test_simulation.RulesTests.test_R19_recovery_uses_starting_support) ... ok
+test_R20_jump_dodge_only_dodges (test_simulation.RulesTests.test_R20_jump_dodge_only_dodges) ... ok
+test_R21_drop_attack_only_drops (test_simulation.RulesTests.test_R21_drop_attack_only_drops) ... ok
+test_R22_drop_dodge_priority (test_simulation.RulesTests.test_R22_drop_dodge_priority) ... ok
+test_R23_final_action_tick_does_not_buffer (test_simulation.RulesTests.test_R23_final_action_tick_does_not_buffer) ... ok
+test_R24_buffer_landing_boundary_integrated (test_simulation.RulesTests.test_R24_buffer_landing_boundary_integrated) ... ok
+test_R25_coyote_exact_expiry (test_simulation.RulesTests.test_R25_coyote_exact_expiry) ... ok
+test_R26_air_jump_attack_clears_buffer (test_simulation.RulesTests.test_R26_air_jump_attack_clears_buffer) ... ok
+test_R27_unavailable_dodge_allows_jump_attack (test_simulation.RulesTests.test_R27_unavailable_dodge_allows_jump_attack) ... ok
+test_R28_endgame_stationary_damage (test_simulation.RulesTests.test_R28_endgame_stationary_damage) ... ok
+test_attack_direction_locked (test_simulation.RulesTests.test_attack_direction_locked) ... ok
+test_attack_phases_have_exact_duration (test_simulation.RulesTests.test_attack_phases_have_exact_duration) ... ok
+test_countdown_consumes_actions (test_simulation.RulesTests.test_countdown_consumes_actions) ... ok
+test_drop_ignores_only_support_and_lands_below (test_simulation.RulesTests.test_drop_ignores_only_support_and_lands_below) ... ok
+test_pause_freezes_everything (test_simulation.RulesTests.test_pause_freezes_everything) ... ok
+test_upward_motion_passes_platform (test_simulation.RulesTests.test_upward_motion_passes_platform) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.715s
+
+OK
+pygame-ce 2.5.7 (SDL 2.32.10, Python 3.12.10)
+180 INFO: PyInstaller: 6.16.0, contrib hooks: 2026.7
+181 INFO: Python: 3.12.10
+211 INFO: Platform: Windows-10-10.0.19045-SP0
+211 INFO: Python environment: C:\Users\user\Desktop\broken_skyscraper\.venv
+212 INFO: wrote C:\Users\user\Desktop\broken_skyscraper\BrokenSkyscraper.spec
+216 INFO: Removing temporary files and cleaning cache in C:\Users\user\AppData\Local\pyinstaller
+223 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\user\\Desktop\\broken_skyscraper',
+ 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip',
+ 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312\\DLLs',
+ 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312\\Lib',
+ 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312',
+ 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv',
+ 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages',
+ 'C:\\Users\\user\\Desktop\\broken_skyscraper']
+pygame-ce 2.5.7 (SDL 2.32.10, Python 3.12.10)
+672 INFO: Appending 'datas' from .spec
+673 INFO: checking Analysis
+673 INFO: Building Analysis because Analysis-00.toc is non existent
+673 INFO: Looking for Python shared library...
+673 INFO: Using Python shared library: C:\Users\user\AppData\Local\Programs\Python\Python312\python312.dll
+673 INFO: Running Analysis Analysis-00.toc
+673 INFO: Target bytecode optimization level: 0
+674 INFO: Initializing module dependency graph...
+676 INFO: Initializing module graph hook caches...
+718 INFO: Analyzing modules for base_library.zip ...
+2234 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+2435 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+4739 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7840 INFO: Caching module dependency graph...
+7889 INFO: Analyzing C:\Users\user\Desktop\broken_skyscraper\main.py
+8086 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+8105 INFO: Processing standard module hook 'hook-pygame.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\pygame\\__pyinstaller'
+8233 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8235 INFO: SetuptoolsInfo: initializing cached setuptools info...
+9273 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+9433 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+9534 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+9546 INFO: Processing module hooks (post-graph stage)...
+9556 INFO: Performing binary vs. data reclassification (22 entries)
+9822 INFO: Looking for ctypes DLLs
+9834 INFO: Analyzing run-time hooks ...
+9836 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+9845 INFO: Creating base_library.zip...
+9869 INFO: Looking for dynamic libraries
+pygame-ce 2.5.7 (SDL 2.32.10, Python 3.12.10)
+10081 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\user\\Desktop\\broken_skyscraper\\.venv\\Lib\\site-packages\\pygame']
+10081 INFO: Extra DLL search directories (PATH): []
+10848 INFO: Warnings written to C:\Users\user\Desktop\broken_skyscraper\build\BrokenSkyscraper\warn-BrokenSkyscraper.txt
+10876 INFO: Graph cross-reference written to C:\Users\user\Desktop\broken_skyscraper\build\BrokenSkyscraper\xref-BrokenSkyscraper.html
+10899 INFO: checking PYZ
+10899 INFO: Building PYZ because PYZ-00.toc is non existent
+10899 INFO: Building PYZ (ZlibArchive) C:\Users\user\Desktop\broken_skyscraper\build\BrokenSkyscraper\PYZ-00.pyz
+11047 INFO: Building PYZ (ZlibArchive) C:\Users\user\Desktop\broken_skyscraper\build\BrokenSkyscraper\PYZ-00.pyz completed successfully.
+11056 INFO: checking PKG
+11056 INFO: Building PKG because PKG-00.toc is non existent
+11056 INFO: Building PKG (CArchive) BrokenSkyscraper.pkg
+11076 INFO: Building PKG (CArchive) BrokenSkyscraper.pkg completed successfully.
+11077 INFO: Bootloader C:\Users\user\Desktop\broken_skyscraper\.venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+11077 INFO: checking EXE
+11078 INFO: Building EXE because EXE-00.toc is non existent
+11078 INFO: Building EXE from EXE-00.toc
+11078 INFO: Copying bootloader EXE to C:\Users\user\Desktop\broken_skyscraper\build\BrokenSkyscraper\BrokenSkyscraper.exe
+11163 INFO: Copying icon to EXE
+11210 INFO: Copying 0 resources to EXE
+11210 INFO: Embedding manifest in EXE
+11250 INFO: Appending PKG archive to EXE
+11295 INFO: Fixing EXE headers
+11511 INFO: Building EXE from EXE-00.toc completed successfully.
+11515 INFO: checking COLLECT
+11516 INFO: Building COLLECT because COLLECT-00.toc is non existent
+11516 INFO: Building COLLECT COLLECT-00.toc
+11806 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+11818 INFO: Build complete! The results are available in: C:\Users\user\Desktop\broken_skyscraper\dist
+pygame-ce 2.5.7 (SDL 2.32.10, Python 3.12.10)
