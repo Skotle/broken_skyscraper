@@ -1,0 +1,269 @@
+{
+    "world": {
+        "name": "Descent - Experimental Tower",
+        "hazardEnabled": true,
+        "left": -9.0,
+        "right": 9.0,
+        "bottom": -2.0,
+        "platforms": [
+            {
+                "id": "START",
+                "x": 0.0,
+                "y": 30.0,
+                "width": 12.0
+            },
+            {
+                "id": "F0",
+                "x": 0.0,
+                "y": 26.5,
+                "width": 8.0
+            },
+            {
+                "id": "R0_-1",
+                "x": -4.8,
+                "y": 28.25,
+                "width": 3.0
+            },
+            {
+                "id": "R0_1",
+                "x": 4.8,
+                "y": 28.25,
+                "width": 3.0
+            },
+            {
+                "id": "F1",
+                "x": 0.0,
+                "y": 23.0,
+                "width": 6.0
+            },
+            {
+                "id": "R1_-1",
+                "x": -4.8,
+                "y": 24.75,
+                "width": 3.0
+            },
+            {
+                "id": "R1_1",
+                "x": 4.8,
+                "y": 24.75,
+                "width": 3.0
+            },
+            {
+                "id": "F2",
+                "x": 0.0,
+                "y": 19.5,
+                "width": 8.0
+            },
+            {
+                "id": "R2_-1",
+                "x": -4.8,
+                "y": 21.25,
+                "width": 3.0
+            },
+            {
+                "id": "R2_1",
+                "x": 4.8,
+                "y": 21.25,
+                "width": 3.0
+            },
+            {
+                "id": "F3",
+                "x": 0.0,
+                "y": 16.0,
+                "width": 6.0
+            },
+            {
+                "id": "R3_-1",
+                "x": -4.8,
+                "y": 17.75,
+                "width": 3.0
+            },
+            {
+                "id": "R3_1",
+                "x": 4.8,
+                "y": 17.75,
+                "width": 3.0
+            },
+            {
+                "id": "F4",
+                "x": 0.0,
+                "y": 12.5,
+                "width": 8.0
+            },
+            {
+                "id": "R4_-1",
+                "x": -4.8,
+                "y": 14.25,
+                "width": 3.0
+            },
+            {
+                "id": "R4_1",
+                "x": 4.8,
+                "y": 14.25,
+                "width": 3.0
+            },
+            {
+                "id": "F5",
+                "x": 0.0,
+                "y": 9.0,
+                "width": 6.0
+            },
+            {
+                "id": "R5_-1",
+                "x": -4.8,
+                "y": 10.75,
+                "width": 3.0
+            },
+            {
+                "id": "R5_1",
+                "x": 4.8,
+                "y": 10.75,
+                "width": 3.0
+            },
+            {
+                "id": "F6",
+                "x": 0.0,
+                "y": 5.5,
+                "width": 8.0
+            },
+            {
+                "id": "R6_-1",
+                "x": -4.8,
+                "y": 7.25,
+                "width": 3.0
+            },
+            {
+                "id": "R6_1",
+                "x": 4.8,
+                "y": 7.25,
+                "width": 3.0
+            },
+            {
+                "id": "F7",
+                "x": 0.0,
+                "y": 2.0,
+                "width": 6.0
+            },
+            {
+                "id": "R7_-1",
+                "x": -4.8,
+                "y": 3.75,
+                "width": 3.0
+            },
+            {
+                "id": "R7_1",
+                "x": 4.8,
+                "y": 3.75,
+                "width": 3.0
+            }
+        ],
+        "spawns": [
+            {
+                "x": -3.0,
+                "y": 30.0,
+                "facing": 1
+            },
+            {
+                "x": 3.0,
+                "y": 30.0,
+                "facing": -1
+            }
+        ]
+    },
+    "config": {
+        "width": 0.8,
+        "height": 1.6,
+        "runSpeed": 6.0,
+        "groundAcceleration": 60.0,
+        "groundDeceleration": 75.0,
+        "airAcceleration": 24.0,
+        "gravity": 30.0,
+        "jumpVelocity": 11.0,
+        "terminalFallSpeed": 18.0,
+        "dropVelocity": -1.0,
+        "coyoteTicks": 6,
+        "jumpBufferTicks": 6,
+        "attackStartup": 8,
+        "attackActive": 3,
+        "attackRecovery": 19,
+        "attackTotal": 30,
+        "attackWidth": 1.0,
+        "attackHeight": 1.2,
+        "attackOffsetX": 0.75,
+        "attackOffsetY": 0.8,
+        "knockbackX": 9.0,
+        "knockbackY": 4.5,
+        "hitstunTicks": 14,
+        "dodgeTicks": 15,
+        "dodgeInvulnerableTicks": 9,
+        "dodgeCooldown": 60
+    },
+    "players": [
+        {
+            "id": 1,
+            "facing": 1,
+            "age": 0,
+            "dodge_ready": 0,
+            "hitstun_until": 0,
+            "coyote_expires": 0,
+            "buffer_expires": 0,
+            "health": 1000,
+            "attack_sequence": 0,
+            "attack_facing": 1,
+            "x": -3.0,
+            "y": 30.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "support": "START",
+            "ignored": "",
+            "action": "Neutral",
+            "eliminated": false,
+            "hit_targets": [],
+            "reasons": [],
+            "pushes": 0,
+            "hits": 0,
+            "dodges": 0,
+            "exposureTicks": 0
+        },
+        {
+            "id": 2,
+            "facing": -1,
+            "age": 0,
+            "dodge_ready": 0,
+            "hitstun_until": 0,
+            "coyote_expires": 0,
+            "buffer_expires": 0,
+            "health": 1000,
+            "attack_sequence": 0,
+            "attack_facing": -1,
+            "x": 3.0,
+            "y": 30.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "support": "START",
+            "ignored": "",
+            "action": "Neutral",
+            "eliminated": false,
+            "hit_targets": [],
+            "reasons": [],
+            "pushes": 0,
+            "hits": 0,
+            "dodges": 0,
+            "exposureTicks": 0
+        }
+    ],
+    "tick": 240,
+    "remaining": 6960,
+    "countdown": 0,
+    "phase": "Playing",
+    "paused": false,
+    "hazardY": 34.0,
+    "result": {
+        "winner": 0,
+        "reason": "",
+        "finalTick": 0,
+        "heights": [],
+        "health": []
+    },
+    "events": []
+}

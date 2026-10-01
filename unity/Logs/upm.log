@@ -1,0 +1,12 @@
+[2026-10-01T05:48:48.197Z][INFO] Command-line: E:\\program_files\\unity\\6000.6.0f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe server -s 34928 --ipc-path Unity-Upm-34928 -l 2 --log-file C:\\Users\\user\\Desktop\\broken_skyscraper\\unity/Logs/upm.log
+[2026-10-01T05:48:48.243Z][INFO] IPC server started (IPC path=Unity-Upm-34928).
+[2026-10-01T05:48:48.243Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-34928.
+[2026-10-01T05:48:50.505Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-01T05:48:50.523Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-01T05:48:50.725Z][INFO] project:list-packages --> 200 (220 ms)
+[2026-10-01T05:48:51.287Z][INFO] project:list-packages --> 200 (764 ms)
+[2026-10-01T05:48:55.144Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-01T05:48:55.244Z][INFO] project:list-packages --> 200 (99 ms)

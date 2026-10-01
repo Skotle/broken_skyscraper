@@ -1,0 +1,4 @@
+Frames: 420
+Replay and endgame and split camera: True
+Replay tick: 240
+Offscreen camera captures exclude IMGUI overlays.

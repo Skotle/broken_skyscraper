@@ -1,0 +1,9 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="BrokenSkyscraper.Match" preserve="nothing" serialized="true"/>
+		<type fullname="BrokenSkyscraper.PlayerConfig" preserve="nothing" serialized="true"/>
+		<type fullname="BrokenSkyscraper.Recording" preserve="nothing" serialized="true"/>
+		<type fullname="BrokenSkyscraper.Result" preserve="nothing" serialized="true"/>
+		<type fullname="BrokenSkyscraper.World" preserve="nothing" serialized="true"/>
+	</assembly>
+</linker>

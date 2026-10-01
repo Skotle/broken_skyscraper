@@ -1,0 +1,3 @@
+Frames: 420
+Replay: True
+Tick: 240
